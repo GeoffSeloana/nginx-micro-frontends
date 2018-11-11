@@ -34,20 +34,31 @@ services:
     ports:
     - "8083:80"
 
-
-  micro-frontend-nginx-master:
-    container_name: micro-frontend-nginx-master
-    build: nginx
-    volumes:
-      - ./assets:/var/www
-    ports:
-      - "8888:80"
+  base-application:
+    container_name: base-application
+    build: base-application
     networks:
       - local-network
-    depends_on:
-      - application-one
-      - application-two
-      - application-three
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    ports:
+    - "8084:80"
+
+
+#  micro-frontend-nginx-master:
+#    container_name: micro-frontend-nginx-master
+#    build: nginx
+#    volumes:
+#      - ./assets:/var/www
+#    ports:
+#      - "8888:80"
+#    networks:
+#      - local-network
+#    depends_on:
+#      - application-one
+#      - application-two
+#      - application-three
 
 networks:
   local-network:
