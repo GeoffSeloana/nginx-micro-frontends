@@ -1,56 +1,62 @@
 version: '2'
 
 services:
-  micro-frontend-docs-page:
-    container_name: micro-frontend-docs-page
-    build: docs-page
+  application-one:
+    container_name: application-one
+    build: ApplicationOne
     networks:
       - local-network
     environment:
       - NODE_ENV=production
       - PORT=5000
-
-  micro-frontend-items-page:
-    container_name: micro-frontend-items-page
-    build: items-page
-    networks:
-      - local-network
-    environment:
-      - NODE_ENV=production
-      - PORT=5000
-  
-  micro-frontend-home-page:
-    container_name: micro-frontend-home-page
-    build: home-page
-    networks:
-      - local-network
-    environment:
-      - NODE_ENV=production
-      - PORT=5000
-
-  micro-frontend-checkout-page:
-    container_name: micro-frontend-checkout-page
-    build: checkout-page
-    networks:
-      - local-network
-    environment:
-      - NODE_ENV=production
-      - PORT=5000
-
-  micro-frontend-nginx-master:
-    container_name: micro-frontend-nginx-master
-    build: nginx
-    volumes:
-      - ./assets:/var/www
     ports:
-      - "8888:80"
+      - "8081:80"
+
+  application-two:
+    container_name: application-two
+    build: ApplicationTwo
     networks:
       - local-network
-    depends_on:
-      - micro-frontend-home-page
-      - micro-frontend-docs-page
-      - micro-frontend-items-page
-      - micro-frontend-checkout-page
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    ports:
+    - "8082:80"
+  
+  application-three:
+    container_name: application-three
+    build: ApplicationThree
+    networks:
+      - local-network
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    ports:
+    - "8083:80"
+
+#  micro-frontend-checkout-page:
+#    container_name: micro-frontend-checkout-page
+#    build: checkout-page
+#    networks:
+#      - local-network
+#    environment:
+#      - NODE_ENV=production
+#      - PORT=5000
+#
+#  micro-frontend-nginx-master:
+#    container_name: micro-frontend-nginx-master
+#    build: nginx
+#    volumes:
+#      - ./assets:/var/www
+#    ports:
+#      - "8888:80"
+#    networks:
+#      - local-network
+#    depends_on:
+#      - micro-frontend-home-page
+#      - micro-frontend-docs-page
+#      - micro-frontend-items-page
+#      - micro-frontend-checkout-page
 
 networks:
   local-network:
