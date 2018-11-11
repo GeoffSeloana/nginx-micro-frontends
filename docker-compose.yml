@@ -34,29 +34,20 @@ services:
     ports:
     - "8083:80"
 
-#  micro-frontend-checkout-page:
-#    container_name: micro-frontend-checkout-page
-#    build: checkout-page
-#    networks:
-#      - local-network
-#    environment:
-#      - NODE_ENV=production
-#      - PORT=5000
-#
-#  micro-frontend-nginx-master:
-#    container_name: micro-frontend-nginx-master
-#    build: nginx
-#    volumes:
-#      - ./assets:/var/www
-#    ports:
-#      - "8888:80"
-#    networks:
-#      - local-network
-#    depends_on:
-#      - micro-frontend-home-page
-#      - micro-frontend-docs-page
-#      - micro-frontend-items-page
-#      - micro-frontend-checkout-page
+
+  micro-frontend-nginx-master:
+    container_name: micro-frontend-nginx-master
+    build: nginx
+    volumes:
+      - ./assets:/var/www
+    ports:
+      - "8888:80"
+    networks:
+      - local-network
+    depends_on:
+      - application-one
+      - application-two
+      - application-three
 
 networks:
   local-network:
