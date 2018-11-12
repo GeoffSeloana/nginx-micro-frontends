@@ -1,8 +1,8 @@
 version: '2'
 
 services:
-  application-one:
-    container_name: application-one
+  applicationone:
+    container_name: applicationone
     build: ApplicationOne
     networks:
       - local-network
@@ -10,10 +10,10 @@ services:
       - NODE_ENV=production
       - PORT=5000
     ports:
-      - "8081:80"
+      - "8081:8080"
 
-  application-two:
-    container_name: application-two
+  applicationtwo:
+    container_name: applicationtwo
     build: ApplicationTwo
     networks:
       - local-network
@@ -21,10 +21,10 @@ services:
       - NODE_ENV=production
       - PORT=5000
     ports:
-    - "8082:80"
+    - "8082:8080"
   
-  application-three:
-    container_name: application-three
+  applicationthree:
+    container_name: applicationthree
     build: ApplicationThree
     networks:
       - local-network
@@ -32,10 +32,10 @@ services:
       - NODE_ENV=production
       - PORT=5000
     ports:
-    - "8083:80"
+    - "8083:8080"
 
-  base-application:
-    container_name: base-application
+  baseapplication:
+    container_name: baseapplication
     build: base-application
     networks:
       - local-network
@@ -43,11 +43,11 @@ services:
       - NODE_ENV=production
       - PORT=5000
     ports:
-    - "8084:80"
+    - "8084:8080"
     depends_on:
-      - application-one
-      - application-two
-      - application-three
+      - applicationone
+      - applicationtwo
+      - applicationthree
 
 
 #  micro-frontend-nginx-master:
