@@ -18,5 +18,26 @@
       "main.bundle.js"
     ],
     "mode": "iframe"
+  },
+  {
+    "name": "applicationone",
+    "selector": "app-applicationone",
+    "baseScriptUrl": "/applicationone",
+    "source":"link"
+  },
+    {
+    "name": "applicationtwo",
+    "selector": "app-application-two",
+    "link": "/applicationtwo",
+    "styles": [
+      "styles.bundle.css"
+    ],
+    "prefix": "applicationtwo",
+    "scripts": [
+      "inline.bundle.js",
+      "polyfills.bundle.js",
+      "main.bundle.js"
+    ],
+    "mode": "iframe"
   }
 ]

@@ -39,6 +39,8 @@ export class AppComponent implements OnInit {
 
     that.mooa.registerApplicationByLink('help', '/assets/help', mooaRouter.matchRoute('help'));
     that.mooa.registerApplicationByLink('app1', '/assets/app1', mooaRouter.matchRoute('app1'));
+    that.mooa.registerApplicationByLink('applicationone', '/applicationone', mooaRouter.matchRoute('applicationone'));
+    that.mooa.registerApplicationByLink('applicationtwo', '/applicationtwo', mooaRouter.matchRoute('applicationtwo'));
     this.mooa.start();
 
     this.router.events.subscribe((event: any) => {

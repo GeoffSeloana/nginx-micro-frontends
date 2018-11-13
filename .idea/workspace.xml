@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d002cabb-5b6c-4a48-a0a6-6c814d47f52a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/3rdpartylicenses.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/main.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/polyfills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/polyfills.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/runtime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/runtime.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/styles.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/vendor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-application/src/assets/ApplicationOne/vendor.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationThree/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationThree/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationTwo/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationTwo/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-application/apps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/base-application/apps.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-application/nginx-default-cfg/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/base-application/nginx-default-cfg/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-application/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/base-application/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-application/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/base-application/src/app/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-application/src/assets/apps.json" beforeDir="false" afterPath="$PROJECT_DIR$/base-application/src/assets/apps.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +201,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base-application/nginx-default-cfg/default.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-744">
               <caret lean-forward="true" />
             </state>
           </provider>
@@ -293,9 +282,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -378,7 +366,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542066989185" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542067293803" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -447,7 +435,7 @@
       <workItem from="1541940618929" duration="1496000" />
       <workItem from="1541942322600" duration="6408000" />
       <workItem from="1542004556582" duration="506000" />
-      <workItem from="1542005094364" duration="18745000" />
+      <workItem from="1542005094364" duration="18884000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1541942872584</created>
@@ -484,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542016595711</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="docker-compose up --build">
+      <created>1542067037991</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1542067037991</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27218000" />
+    <option name="totallyTimeSpent" value="27357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -832,7 +827,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base-application/nginx-default-cfg/default.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-744">
           <caret lean-forward="true" />
         </state>
       </provider>

@@ -1,2 +1,6 @@
 http://mooa.phodal.com/assets/app1
 http://mooa.phodal.com/assets/help
+http://mooa.phodal.com/assets/applicationone
+http://mooa.phodal.com/assets/applicationone
+http://mooa.phodal.com/assets/applicationtwo
+/applicationtwo
