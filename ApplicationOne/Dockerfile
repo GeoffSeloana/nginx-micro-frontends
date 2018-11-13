@@ -26,5 +26,6 @@ FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 ## From 'builder' copy website to default nginx public folder
 COPY --from=builder /app/dist/ApplicationOne /usr/share/nginx/html
+COPY ./nginx-default-cfg/default.conf /etc/nginx/conf.d/
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
