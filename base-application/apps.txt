@@ -1,6 +1,5 @@
 http://mooa.phodal.com/assets/app1
 http://mooa.phodal.com/assets/help
-http://mooa.phodal.com/assets/applicationone
-http://mooa.phodal.com/assets/applicationone
-http://mooa.phodal.com/assets/applicationtwo
-/applicationtwo
+http://localhost:8081/
+http://localhost:8082/
+http://localhost:8083/
