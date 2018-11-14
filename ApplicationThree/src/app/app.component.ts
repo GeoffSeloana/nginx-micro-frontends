@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {mooaPlatform} from 'mooa';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-three',
@@ -7,4 +9,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+
+  navigateToApp1() {
+    mooaPlatform.navigateTo({
+      appName: 'applicationthree',
+      router: 'home'
+    });
+  }
+
+  constructor(private router: Router) {
+    mooaPlatform.handleRouterUpdate(this.router, 'applicationthree');
+  }
+
+
+
 }
