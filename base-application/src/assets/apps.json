@@ -45,7 +45,7 @@
   {
     "name": "applicationtwo",
     "selector": "app-two",
-    "linkl": "/applicationtwo",
+    "link": "/applicationtwo",
     "sourceType": "link",
     "styles": [],
     "prefix": "applicationtwo",
@@ -60,7 +60,8 @@
   {
     "name": "applicationthree",
     "selector": "app-three",
-    "baseScriptUrl": "/",
+    "link": "http://localhost:8083/",
+    "sourceType": "link",
     "styles": [],
     "prefix": "applicationthree",
     "scripts": [
