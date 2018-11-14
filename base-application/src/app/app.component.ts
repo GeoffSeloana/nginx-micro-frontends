@@ -5,7 +5,7 @@ import {NavigationEnd, Router} from '@angular/router';
 import {HttpClient} from '@angular/common/http';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-base',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
